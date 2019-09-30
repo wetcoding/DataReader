@@ -10,12 +10,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- *
+ * Класс для работы с настройками
  */
 public class Configuration {
     Map<String,String> cfgMap=new HashMap();
     private final int MAX_ROW_COUNT=100;
     private final int MAX_ROW_LENGTH=100;
+
 
     public Configuration(String fileName) throws IOException{
         cfgMap=new HashMap<String,String>();
@@ -42,6 +43,12 @@ public class Configuration {
         }
     }
 
+    /**
+     * Получение значения конфигурации по ключу
+     * @param key - ключ
+     * @return - значение
+     * @throws ConfigurationException
+     */
     public String get(String key) throws ConfigurationException{
         if(cfgMap.containsKey(key))
             return cfgMap.get(key);
@@ -50,6 +57,11 @@ public class Configuration {
     }
 
 
+    /**
+     * Разбор строки на "ключ"-"значение"
+     * @param line - исходная строка
+     * @return - массив из 2х элементов или null
+     */
     private String[] parseLine(String line){
         if(line.startsWith("//"))
             return null;

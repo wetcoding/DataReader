@@ -3,21 +3,17 @@ package com.wetcoding.datareader;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс для пердставления столбца
+ */
 class DataColumn {
-    /**Имя колонки в программе*/
+    /**Имя столбца в программе*/
     private String name;
-    /** Фактическое имя таблицы*/
+    /** Фактическое имя стобца в таблице*/
     private String designation;
     /** Номер столбца в csv файлах*/
     private int index;
 
-    public int getIndex() {
-        return index;
-    }
-
-    public void setIndex(int index) {
-        this.index = index;
-    }
 
     private List<Float> values=new ArrayList<>();
 
@@ -30,6 +26,16 @@ class DataColumn {
     public DataColumn(String name){
         this(name,name);
     }
+
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
 
     public String getName(){
         return this.name;
