@@ -14,6 +14,9 @@ import java.util.List;
 import com.opencsv.CSVReader;
 import resources.StringResources;
 
+/**
+ * Класс для чтения данных из файла
+ */
 public class FileReader extends DataReader {
 
 

@@ -1,5 +1,8 @@
 package resources;
 
+/**
+ * Класс со строковыми ресурсами
+ */
 public class StringResources {
     public static final String CFG_NO_FILE="Could not load ini file ";
     public static final String CFG_NO_SUCH_FIELD="No such field in ini-file: ";

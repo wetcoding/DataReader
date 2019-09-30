@@ -6,6 +6,10 @@ import resources.StringResources;
 
 import java.sql.*;
 
+
+/**
+ * Класс для чтения данных из БД
+ */
 public class DBReader extends DataReader {
     public DBReader(Configuration configuration,  String ... columns) throws DataReaderException{
         super(configuration,columns);
