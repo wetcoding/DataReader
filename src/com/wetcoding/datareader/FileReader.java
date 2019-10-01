@@ -1,18 +1,12 @@
 package com.wetcoding.datareader;
 
-import configuration.Configuration;
-import configuration.ConfigurationException;
+import com.wetcoding.configuration.Configuration;
 
-import java.awt.*;
-import java.io.BufferedReader;
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
 import com.opencsv.CSVReader;
-import resources.StringResources;
+import com.wetcoding.resources.StringResources;
 
 /**
  * Класс для чтения данных из файла

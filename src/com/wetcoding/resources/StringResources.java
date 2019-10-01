@@ -1,4 +1,4 @@
-package resources;
+package com.wetcoding.resources;
 
 /**
  * Класс со строковыми ресурсами

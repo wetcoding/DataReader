@@ -1,6 +1,6 @@
-package configuration;
+package com.wetcoding.configuration;
 
-import resources.StringResources;
+import com.wetcoding.resources.StringResources;
 
 import java.io.BufferedReader;
 import java.io.File;

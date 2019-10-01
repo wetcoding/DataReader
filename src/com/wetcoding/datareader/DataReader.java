@@ -1,8 +1,8 @@
 package com.wetcoding.datareader;
 
-import configuration.Configuration;
-import configuration.ConfigurationException;
-import resources.StringResources;
+import com.wetcoding.configuration.Configuration;
+import com.wetcoding.configuration.ConfigurationException;
+import com.wetcoding.resources.StringResources;
 
 import java.util.ArrayList;
 import java.util.List;

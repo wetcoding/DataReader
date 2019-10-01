@@ -1,8 +1,9 @@
+package com.wetcoding;
 import com.wetcoding.datareader.DBReader;
 import com.wetcoding.datareader.DataReader;
 import com.wetcoding.datareader.DataReaderException;
 import com.wetcoding.datareader.FileReader;
-import configuration.Configuration;
+import com.wetcoding.configuration.Configuration;
 
 import java.io.IOException;
 
@@ -19,8 +20,8 @@ public class Main {
         try{
             String [] colNames={"index","WEIGHT"};
 
-            DataReader reader=new DBReader(configuration,colNames);
-            //DataReader reader=new FileReader(configuration,"2.csv",colNames);
+            //DataReader reader=new DBReader(configuration,colNames);
+            DataReader reader=new FileReader(configuration,"2.csv",colNames);
 
             for(String name:colNames) {
                 System.out.println("Values of column " + name);

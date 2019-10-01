@@ -1,4 +1,4 @@
-package configuration;
+package com.wetcoding.configuration;
 
 /**
  * Класс исключения при работе к конфигурацией
